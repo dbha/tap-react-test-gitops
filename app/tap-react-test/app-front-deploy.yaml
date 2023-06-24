@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app-front
+  name: app-front-deploy
+#   namespace: demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-front
+  template:
+    metadata:
+      labels:
+        app: app-front
+    spec:
+      containers:
+      - image: app-front
+        imagePullPolicy: IfNotPresent
+        name: app-front
