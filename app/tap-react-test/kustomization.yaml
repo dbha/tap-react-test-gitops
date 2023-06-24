@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 # namespace: demo
 images:
-- digest: sha256:b2c29889b49d7bb0af7b3c1ab1155560624c6c24a61dcf37c637044b1f70c1da
+- digest: sha256:5374aff134b9ac59dc15025e38921370da7dd3d56e6526fe6adcc0afc691c72f
   name: app-front
   newName: harborplf.dha-tkgdemo.net/tanzu/apps/app-front
 resources:
